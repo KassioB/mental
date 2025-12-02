@@ -10,6 +10,13 @@ on:
   # Permite que você execute este workflow manualmente na aba Actions do GitHub
   workflow_dispatch:
 
+# Define as permissões para o GITHUB_TOKEN para este workflow.
+# Isso é necessário para permitir que o workflow publique no GitHub Pages.
+permissions:
+  contents: read # para fazer o checkout do código
+  pages: write # para publicar nas Pages
+  id-token: write # para autenticar com o provedor OIDC do GitHub
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
