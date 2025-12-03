@@ -2,14 +2,12 @@
 const nextConfig = {
   output: 'export',
   
-  // Define o caminho base APENAS em produção
-  basePath: process.env.NODE_ENV === 'production' ? '/mental' : '',
+  // REMOVA a condição e coloque o texto direto
+  basePath: '/mental', 
 
   images: {
     unoptimized: true,
   },
-  
-  // Remova o assetPrefix para evitar conflitos, o basePath já cuida disso
   typescript: {
     ignoreBuildErrors: true,
   },
