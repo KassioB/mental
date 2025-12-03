@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Substitua 'mental' pelo nome do seu repositório
+  
+  // Define o caminho base APENAS em produção
   basePath: process.env.NODE_ENV === 'production' ? '/mental' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/mental/' : '',
 
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     unoptimized: true,
   },
+  
+  // Remova o assetPrefix para evitar conflitos, o basePath já cuida disso
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 }
 
-export default nextConfig
+export default nextConfig;

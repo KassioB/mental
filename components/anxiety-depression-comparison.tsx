@@ -12,7 +12,7 @@ export function AnxietyDepressionComparison() {
           {/* </CHANGE> */}
           <div className="relative w-full aspect-[16/9] md:aspect-[2/1] overflow-hidden">
             <Image
-              src="/mental/anxiety-depression-comparison.png"
+              src="/anxiety-depression-comparison.png"
               alt="Comparação entre sintomas de ansiedade e depressão"
               fill
               className="object-contain"
