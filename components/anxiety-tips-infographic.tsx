@@ -1,5 +1,9 @@
 import Image from "next/image"
 
+// Importando direto da pasta assets que aparece no seu print
+// O "../../" serve para sair de 'ui', sair de 'components' e chegar na raiz
+import infograficoImg from "../../assets/anxiety-tips-infographic.jpg"
+
 export function AnxietyTipsInfographic() {
   return (
     <section className="py-16 px-4 bg-[#FFE5E4] to-muted/20">
@@ -11,14 +15,13 @@ export function AnxietyTipsInfographic() {
           </p>
         </div>
 
-        <div className="overflow-hidden ">
+        <div className="overflow-hidden">
           <Image
-            src="/anxiety-tips-infographic.jpg"
-            alt="Infográfico com dicas para ansiedade: exercício físico, meditar, sono adequado, socializar, autoconhecimento e alimentação saudável"
-            width={1200}
-            height={1200}
+            src={infograficoImg} // <--- AQUI: Usamos a variável importada!
+            alt="Infográfico com dicas para ansiedade..."
             className="w-full h-auto"
             priority
+            placeholder="blur"
           />
         </div>
       </div>
