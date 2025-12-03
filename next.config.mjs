@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  
-  // REMOVA a condição e coloque o texto direto
-  basePath: '/mental', 
-
+  basePath: '/mental', // OBRIGATÓRIO: O nome exato do seu repo
   images: {
     unoptimized: true,
   },
