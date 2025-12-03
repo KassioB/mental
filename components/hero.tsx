@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ChevronDown, MapPin, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Logo from "@/assets/mente-aberta-logo.png"
 
 export function Hero() {
   return (
@@ -12,7 +13,7 @@ export function Hero() {
           <div className="inline-block">
             <div className="mx-auto mb-6">
               <Image
-                src="/mente-aberta-logo.png"
+                src={Logo}
                 alt="Mente Aberta"
                 width={180}
                 height={180}

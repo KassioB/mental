@@ -1,5 +1,8 @@
 import Image from "next/image"
 
+// 1. Importação direta usando o alias "@" que aponta para a raiz
+import comparisonImg from "@/assets/anxiety-depression-comparison.png"
+
 export function AnxietyDepressionComparison() {
   return (
     <section className="py-16 bg-background">
@@ -12,12 +15,12 @@ export function AnxietyDepressionComparison() {
           {/* </CHANGE> */}
           <div className="relative w-full aspect-[16/9] md:aspect-[2/1] overflow-hidden">
             <Image
-              src="/anxiety-depression-comparison.png"
+              src={comparisonImg} // 2. Usa a variável importada aqui
               alt="Comparação entre sintomas de ansiedade e depressão"
               fill
               className="object-contain"
               priority
-              unoptimized
+              placeholder="blur" // Bônus: Efeito de blur enquanto carrega
             />
           </div>
         </div>
