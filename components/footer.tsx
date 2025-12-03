@@ -21,7 +21,9 @@ export function Footer() {
               <p className="text-sm text-muted-foreground mb-4">
                 Serviço gratuito do SUS para atendimento em saúde mental
               </p>
-              <Button variant="outline">Encontrar CAPS</Button>
+              <a href="https://cidadao.saude.al.gov.br/informacoes/mapa_saude/#caps" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline">Encontrar CAPS</Button>
+              </a>
             </Card>
           </div>
 

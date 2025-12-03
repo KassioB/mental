@@ -10,10 +10,12 @@ export function BookletCTA() {
           <p className="text-lg text-muted-foreground text-balance">
             Baixe a cartilha completa com informações detalhadas sobre como cuidar da sua saúde mental
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 gap-2">
-            <BookOpen className="w-5 h-5" />
-            Baixar Cartilha Completa
-          </Button>
+          <a href="https://kassiob.github.io/Mente-Aberta/" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="text-lg px-8 py-6 gap-2">
+              <BookOpen className="w-5 h-5" />
+              Acessar cartilha completa
+            </Button>
+          </a>
         </div>
       </div>
     </section>
