@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/mental', // OBRIGATÓRIO: O nome exato do seu repo
+  basePath: '/mental',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
