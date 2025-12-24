@@ -63,10 +63,7 @@ jobs:
         run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Build with Next.js
-        run: npx next build
-        env:
-          NEXT_PRIVATE_SKIP_SENTRY_BUILD_ID_IMPORT: 1
-          NODE_ENV: production
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
