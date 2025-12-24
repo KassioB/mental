@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/mental',
+  assetPrefix: '/mental',
   trailingSlash: true,
   images: {
     unoptimized: true,
