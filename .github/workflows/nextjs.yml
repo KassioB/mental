@@ -63,7 +63,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build with Next.js
-        run: npm run build
+        run: |
+          chmod +x ./node_modules/.bin/next
+          ./node_modules/.bin/next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
