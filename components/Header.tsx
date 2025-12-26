@@ -27,7 +27,7 @@ export function Header() {
               <p className="text-xs font-semibold text-sky-800 uppercase tracking-wider">Navegação</p>
             </div>
             <DropdownMenuItem asChild>
-              <a href="#cartilha" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
+              <a href="https://kassiob.github.io/Mente-Aberta/" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
                 Ir para Cartilha
               </a>
             </DropdownMenuItem>
