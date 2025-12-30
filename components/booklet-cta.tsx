@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { BookOpen } from "lucide-react"
+import Link from "next/link"
 
 export function BookletCTA() {
   return (
@@ -10,12 +11,12 @@ export function BookletCTA() {
           <p className="text-lg text-muted-foreground text-balance">
             Baixe a cartilha completa com informações detalhadas sobre como cuidar da sua saúde mental
           </p>
-          <a href="https://kassiob.github.io/Mente-Aberta/" target="_blank" rel="noopener noreferrer">
+          <Link href="/cartilha">
             <Button size="lg" className="text-lg px-8 py-6 gap-2">
               <BookOpen className="w-5 h-5" />
               Acessar cartilha completa
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
