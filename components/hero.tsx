@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ChevronDown, MapPin, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import Logo from "@/assets/mente-aberta-logo.png"
 
 export function Hero() {
@@ -34,9 +35,11 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="text-lg px-8 py-6 gap-2">
-              <MapPin className="w-5 h-5" />
-              Mapa de Saúde Mental
+            <Button size="lg" className="text-lg px-8 py-6 gap-2" asChild>
+              <Link href="/mapa">
+                <MapPin className="w-5 h-5" />
+                Mapa de Saúde Mental
+              </Link>
             </Button>
           </div>
         </div>

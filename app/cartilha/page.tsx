@@ -479,21 +479,6 @@ export default function Booklet() {
                                         </details>
                                     </div>
 
-                                    <div>
-                                        <details className="cursor-pointer group">
-                                            <summary className="flex items-center justify-start">
-                                                3. Emergências: <span className="ml-1 text-red-500 transition-transform duration-200 group-open:rotate-90">▶</span>
-                                            </summary>
-                                            <ul className="mt-2 ml-5 list-disc text-sky-800 text-sm">
-                                                <li>SAMU: 192
-                                                </li>
-                                                <li>Corpo de Bombeiros: 193
-                                                </li>
-                                                <li>Hospitais, UPA 24h, Pronto-Socorro
-                                                </li>
-                                            </ul>
-                                        </details>
-                                    </div>
                                 </ol>
                             </div>
 

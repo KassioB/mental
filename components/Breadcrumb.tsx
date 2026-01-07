@@ -7,6 +7,7 @@ import { ChevronRight } from "lucide-react"
 export function Breadcrumb() {
   const pathname = usePathname()
   const isCartilha = pathname?.startsWith("/cartilha")
+  const isMapa = pathname?.startsWith("/mapa")
 
   return ( 
     <nav 
@@ -26,6 +27,16 @@ export function Breadcrumb() {
             </li>
             <li className="font-bold">
               Cartilha
+            </li>
+          </>
+        )}
+        {isMapa && (
+          <>
+            <li className="flex items-center opacity-70">
+              <ChevronRight className="w-4 h-4" />
+            </li>
+            <li className="font-bold">
+              Mapa
             </li>
           </>
         )}

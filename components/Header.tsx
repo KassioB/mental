@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation"
 export default function Header() {
   const pathname = usePathname()
   const isCartilha = pathname?.startsWith("/cartilha")
+  const isHome = pathname === "/"
 
   return (
     <header
@@ -33,14 +34,19 @@ export default function Header() {
               <p className="text-xs font-semibold text-sky-800 uppercase tracking-wider">Navegação</p>
             </div>
             <DropdownMenuItem asChild>
+              <Link href="/" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
+                Início
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
               <Link href="/cartilha" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
                 Ir para Cartilha
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <a href="#mapa" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
+              <Link href="/mapa" className="flex items-center px-3 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors cursor-pointer font-medium">
                 Mapa da Saúde Mental
-              </a>
+              </Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -50,7 +56,7 @@ export default function Header() {
             <img src={Logo.src} alt="Logo" width={32} height={32} className="w-8 h-8" loading="eager" />
           </Link>
           <h1 className="text-xl ml-4 md:text-2xl font-bold text-balance uppercase">
-            {isCartilha ? "CARTILHA MENTE ABERTA" : "MAPA DA SAÚDE MENTAL DE ALAGOAS"}
+            {isHome ? "MENTE ABERTA" : (isCartilha ? "CARTILHA MENTE ABERTA" : "MAPA DA SAÚDE MENTAL DE ALAGOAS")}
           </h1>
         </div>
       </div>
